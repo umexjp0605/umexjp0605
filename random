@@ -2,15 +2,13 @@ import random
 
 hands=['グー', 'チョキ', 'パー']
 
-print('0:グー 1:チョキ 2:パー')
+print
 
-input_str=input('ここに番号を入力すればできる？>>> ')
+hn=int(input('出す手を決めてください(0:グー 1:チョキ 2:パー):')
 
-hand_num=int(input_str)
+chn=random.randrange(3)
+ch=hands[chn]
 
-computer_hand_num=random.randrange(3)
-computer_hand=hands[computer_hand_num]
-
-player_hand=hands[hand_num]
-print('あなたは'+player_hand+'を出したはず')
-print('コンピュータは'+computer_hand+'を出すはず')
+ph=hands[hn]
+print('あなたは'+ph+'を出しました')
+print('コンピュータは'+ch+'を出しました')
