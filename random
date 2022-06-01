@@ -1,10 +1,10 @@
 import random
 
+
+
 hands=['グー', 'チョキ', 'パー']
 
-print
-
-hn=int(input('出す手を決めてください(0:グー 1:チョキ 2:パー):')
+hn=int(input('出す手を決めてください(0:グー 1:チョキ 2:パー):'))
 
 chn=random.randrange(3)
 ch=hands[chn]
